@@ -1,0 +1,56 @@
+{
+  "types": [
+    {
+      "name": "Simple CPT"
+    },
+    {
+      "name": "Radius",
+      "plural": "Radii"
+    },
+    {
+      "name": "Family Member",
+      "supports": ["title"],
+      "args": {
+        "hierarchical": true
+      }
+    }
+  ],
+  "taxonomies": [
+    {
+      "name": "Simple Taxonomy",
+      "describes": "Simple CPT"
+    },
+    {
+      "name": "Complex CPT",
+      "describes": ["Family Member, Radius"],
+      "args": {
+        "hierarchical": true
+      }
+    }
+  ],
+  "field_groups": [
+    {
+      "name": "Family Member Options",
+      "belongsTo": ["Family Member"],
+      "fields": [
+        {
+          "name": "Middle Name"
+        },
+        {
+          "name": "Birthday",
+          "type": "text_date"
+        },
+        {
+          "name": "Relationship",
+          "type": "select",
+          "options": [
+            "Mother",
+            "Sister",
+            "Sister",
+            "Brother"
+          ]
+        }
+      ]
+    }
+  ]
+}
