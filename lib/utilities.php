@@ -6,7 +6,7 @@
  * @return string         Sanitized string.
  */
 function stb_hyphenate($string){
-  return preg_replace("/[^a-zA-Z]/", '-', $string);
+  return preg_replace("/[^a-zA-Z]/", '_', $string);
 }
 
 /**
