@@ -36,7 +36,8 @@ class STB_Taxonomy {
     $default_args = [
       'label'               => $names['singular'],
       'labels'              => $labels,
-      'hierarchical'        => false
+      'hierarchical'        => false,
+      'show_in_rest'        => true
     ];
 
     $merged_args = is_array($args) ? array_merge($default_args, $args) : $default_args;
