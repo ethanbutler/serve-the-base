@@ -8,7 +8,7 @@ STB is designed to be completely front-end agnostic. You can build a full front-
 
 STB will register all custom post types, taxonomies, and fields specified in the schema file. It will create all necessary REST endpoint as well as include data from your custom fields as part of responses.
 
-STB makes absolutely no decisions about the front-end of your site. If you try using STB as a parent theme, it will yell at you.
+STB makes absolutely no decisions about the front-end of your site, but should be used with a child theme if you want to use WordPress for the front-end of your site. If you try using STB as a theme directly, it will yell at you.
 
 ## Getting Started :fire:
 
