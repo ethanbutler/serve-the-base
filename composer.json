@@ -5,7 +5,7 @@
     "webdevstudios/cmb2": "dev-master"
   },
   "autoload": {
-    "files": ["vender/cmb2/init.php"]
+    "files": ["vendor/cmb2/init.php"]
   },
   "extra": {
     "installer-paths": {
